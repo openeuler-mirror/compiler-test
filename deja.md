@@ -20,7 +20,7 @@
     安装完deja之后，运行测试需要一个site.exp文件，这个文件可以从已经有deja环境的机器上拷贝过来，也可以自己生成，然后再根据待测工具链的实际情况进行修改。
     - 自己生成site.exp, 进入dejagnu-1.6.1目录;
     执行`./configure && make && make -j -k check`会有site.exp生成。然后，再把site.exp拷贝到gcc-9.3的testsuite目录下，根据自己的实际情况修改site.exp文件。  
-    例如: 修改site.exp内容:
+    例如: 修改site.exp内容:  
           `set srcdir  ./`   
           `set objdir  ./`  
           `set tempdir ./`  
