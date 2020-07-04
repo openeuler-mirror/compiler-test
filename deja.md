@@ -26,10 +26,10 @@
           set objdir  ./
           set tempdir ./
           '''
-    - 如果deja测试需要加选项，需要修改site.exp文件。
-      例如：增加 `set CFLAGS_FOR_TARGET “-mcmodel=medium”``
-    - 如果只跑编译，需要修改site.exp文件。
-      例如：增加`set keep_file "YES"``。
+    - 如果deja测试需要加选项，需要修改site.exp文件。  
+      例如：增加`set CFLAGS_FOR_TARGET “-mcmodel=medium”`
+    - 如果只跑编译，需要修改site.exp文件。  
+      例如：增加`set keep_file "YES"`。
 3. 运行测试
     - 执行单个用例：
     在gcc-9.3源码的testsuite目录下找到对应的用例，例如：`split-path-10.c`，同级目录下一
