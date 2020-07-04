@@ -21,9 +21,9 @@
     - 自己生成site.exp, 进入dejagnu-1.6.1目录;
     执行`./configure && make && make -j -k check`会有site.exp生成。然后，再把site.exp拷贝到gcc-9.3的testsuite目录下，根据自己的实际情况修改site.exp文件。  
     例如: 修改site.exp内容:
-          `set srcdir  ./`
-          `set objdir  ./`
-          `set tempdir ./`
+          `set srcdir  ./`   
+          `set objdir  ./`  
+          `set tempdir ./`  
     - 如果deja测试需要加选项，需要修改site.exp文件。  
       例如：增加`set CFLAGS_FOR_TARGET "-mcmodel=medium"`
     - 如果只跑编译，需要修改site.exp文件。  
